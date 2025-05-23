@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/f52c1e72-79dd-418f-9deb-b40eac2040bf
 - **Firebase Firestore** — store used
 - **Koin** — for Dependency Injection
 - **Voyager** — for navigation
-- **Mokkery / Turbine** — for unit tests (as full crossplatform unit test frameworks)
+- **Mokkery / Turbine / kotlin.test** — for unit tests (as full crossplatform unit test frameworks)
 
 ---
 
@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/f52c1e72-79dd-418f-9deb-b40eac2040bf
 - Followed SOLID principle
 - Can be compiled to Web and Desktop if needed
 
-💡 Tests covered all of the layers - business logic, repositories, mappers and viewmodels using `Turbine` and `Mokkery` as crossplatform test frameworks
+💡 Tests covered all of the layers - business logic, repositories, mappers and viewmodels using `kotlin.test`, `Turbine` and `Mokkery` as crossplatform test frameworks
 
 ---
 

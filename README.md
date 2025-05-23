@@ -1,15 +1,18 @@
-# CashiTest
+# CashiTest - multiplatform (Android & iOS)
 
 ---
 
 ## 📱 Demo
 
 ### Android
-![Android Demo](https://i.imgur.com/cI4wtlj.gif)
+![Android Demo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenVrYWh1cTY5Yzg4dmJrZmlrbTZlZndlMGsyaW40MzFoaXIxYmh6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QySbYQ4saxvfTOrDWn/giphy.gif)
 
 
 ### iOS
-![iOS Demo](https://i.imgur.com/oIjIp23.gif)
+
+https://github.com/user-attachments/assets/f52c1e72-79dd-418f-9deb-b40eac2040bf
+
+
 
 ---
 

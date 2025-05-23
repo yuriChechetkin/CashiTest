@@ -36,6 +36,7 @@ https://github.com/user-attachments/assets/f52c1e72-79dd-418f-9deb-b40eac2040bf
 - MVI architreucture with splitted logic and states into Domain and ViewState - any state (Domain/View) could be reused, tested indepdently
 - Flexible DI base on feature module approach
 - Common UI based on compose multiplatform, inculding states and navigation
+- All views moved to a independent `ui_components` layer to be reusable as well
 - Followed SOLID principle
 - Can be compiled to Web and Desktop if needed
 

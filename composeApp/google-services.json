@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "288062177944",
+    "project_id": "cashi-test-kmm",
+    "storage_bucket": "cashi-test-kmm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288062177944:android:258e1e2739eb025a3cc6ed",
+        "android_client_info": {
+          "package_name": "org.example.cashitest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS7iGIFz70Om1L9i37CiHjWQOFCzppfEM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,14 +1,48 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# CashiTest
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+---
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## 📱 Demo
+
+### Android
+![Android Demo](https://i.imgur.com/cI4wtlj.gif)
 
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+### iOS
+![iOS Demo](https://i.imgur.com/oIjIp23.gif)
+
+---
+
+## 🧰 Stack used
+
+- **Kotlin Multiplatform Mobile (KMM)** — fully cross platform Android and iOS application
+- **Jetpack Compose & Compose Multiplatform** — UI Framework
+- **Ktor** — network client and mocked web server
+- **Firebase Firestore** — store used
+- **Koin** — for Dependency Injection
+- **Voyager** — for navigation
+- **Mokkery / Turbine** — for unit tests
+
+---
+
+## 🔗 Kotlin multiplatform and architecture
+
+- Fully multiplatform application with all of the code reusable on both platform stored in `commonMain`
+- `androidMain`, `iosMain` — platform specific implementations, used for dates only in this sample
+- Clear architecture with independent layers - `data`, `domain`, `presentation`, any layer could be used as multiplatform if neccessary starting from network cliend and ending by business logic
+- MVI architreucture with splitted logic and states into Domain and ViewState - any state (Domain/View) could be reused, tested indepdently
+- Flexible DI base on feature module approach
+- Common UI based on compose multiplatform, inculding states and navigation
+- Followed SOLID principle
+- Can be compiled to Web and Desktop if needed
+
+💡 Tests covered business logic, repositories and viewmodels using `Turbine` and `Mokkery`.
+
+---
+
+## 🚀 How to run?
+
+- Just run from Android Studio with Kotlin multiplatform plugin enough
+- Tests can be run also inside Android Studio 
+  
+<img width="465" alt="Снимок экрана 2025-05-23 в 06 42 22" src="https://github.com/user-attachments/assets/9b556b07-e4f8-4b4a-899a-2514ed941d52" />

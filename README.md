@@ -32,11 +32,11 @@ https://github.com/user-attachments/assets/f52c1e72-79dd-418f-9deb-b40eac2040bf
 
 - Fully multiplatform application with all of the code reusable on both platform stored in `commonMain`
 - `androidMain`, `iosMain` — platform specific implementations, used for dates only in this sample
-- Clear architecture with independent layers - `data`, `domain`, `presentation`, any layer could be used as multiplatform if neccessary starting from network cliend and ending by business logic
+- Clear architecture with independent layers - `data`, `domain`, `presentation`, any layer could be used as multiplatform if neccessary rfom network client to business logic and ui
 - MVI architreucture with splitted logic and states into Domain and ViewState - any state (Domain/View) could be reused, tested indepdently
-- Flexible DI base on feature module approach
-- Common UI based on compose multiplatform, inculding states and navigation
-- All views moved to a independent `ui_components` layer to be reusable as well
+- Flexible DI based on feature module approach in `di` package
+- Common UI for both platforms based on compose multiplatform, inculding states and navigation
+- All views moved to independent `ui_components` layer to be reusable as well
 - Followed SOLID principle
 - Can be compiled to Web and Desktop if needed
 

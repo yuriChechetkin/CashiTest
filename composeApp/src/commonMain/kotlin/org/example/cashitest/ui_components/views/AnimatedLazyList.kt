@@ -1,19 +1,13 @@
 package org.example.cashitest.ui_components.views
 
 import androidx.compose.animation.*
-import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
-import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.delay
 import org.example.cashitest.ui_components.models.TransactionView
-
-private const val ANIMATION_DURATION = 300
-private const val ANIMATION_DURATION_OFFSET = 50L
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
@@ -28,31 +22,26 @@ fun BoxScope.AnimatedLazyList(
         modifier = modifier,
         state = listState,
     ) {
-        itemsIndexed(items, key = { index, item ->
+
+        items(items.size, key = { items[it].key() }) { index ->
+            val item = items[index]
             when (item) {
-                is TransactionView.Header -> item.date
-                is TransactionView.Item -> item.subtitle
-            }
-        }) { index, item ->
-            var visible by remember { mutableStateOf(false) }
-            LaunchedEffect(Unit) {
-                delay(index * ANIMATION_DURATION_OFFSET)
-                visible = true
-            }
-            AnimatedVisibility(
-                visible = visible,
-                enter = fadeIn(tween(ANIMATION_DURATION)) +
-                        slideInVertically(
-                            animationSpec = tween(ANIMATION_DURATION),
-                            initialOffsetY = { it / 2 }
-                        ),
-                exit = fadeOut()
-            ) {
-                when (item) {
-                    is TransactionView.Header -> HeaderCard(item)
-                    is TransactionView.Item -> TransactionCard(item)
-                }
+                is TransactionView.Header -> HeaderCard(
+                    item = item,
+                    modifier = Modifier.animateItem()
+                )
+                is TransactionView.Item -> TransactionCard(
+                    item,
+                    modifier = Modifier.animateItem()
+                )
             }
         }
+    }
+}
+
+private fun TransactionView.key(): String {
+    return when (this) {
+        is TransactionView.Header -> this.date
+        is TransactionView.Item -> this.subtitle
     }
 }

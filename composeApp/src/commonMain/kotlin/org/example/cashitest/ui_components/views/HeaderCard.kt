@@ -12,9 +12,12 @@ import androidx.compose.ui.unit.dp
 import org.example.cashitest.ui_components.models.TransactionView
 
 @Composable
-fun HeaderCard(item: TransactionView.Header) {
+fun HeaderCard(
+    item: TransactionView.Header,
+    modifier: Modifier = Modifier,
+) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .background(MaterialTheme.colorScheme.background)
     ) {
@@ -22,7 +25,7 @@ fun HeaderCard(item: TransactionView.Header) {
             text = item.date,
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.7f),
-            modifier = Modifier.padding(vertical = 4.dp)
+            modifier = modifier.padding(vertical = 4.dp)
         )
     }
 }

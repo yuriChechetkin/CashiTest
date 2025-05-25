@@ -22,10 +22,13 @@ import org.example.cashitest.presentation.utils.successColor
 import org.example.cashitest.ui_components.models.TransactionView
 
 @Composable
-fun TransactionCard(item: TransactionView.Item) {
+fun TransactionCard(
+    item: TransactionView.Item,
+    modifier: Modifier = Modifier
+) {
     Card(
         shape = MaterialTheme.shapes.medium,
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
             .height(IntrinsicSize.Min)
     ) {

@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/fd9be55e-83a1-4ac2-abcc-1da68f37d6f6
 - Followed SOLID principle
 - Can be compiled to Web and Desktop if needed
 
-💡 Tests covered all of the layers - business logic, repositories, mappers and viewmodels using `kotlin.test`, `Turbine` and `Mokkery` as crossplatform test frameworks
+💡 Tests covered all of the layers - business logic, repositories, mappers and viewmodels using `kotlin.test`, `Turbine` and `Mokkery` as crossplatform test frameworks. Full coverage by unit tests.
 
 ---
 
@@ -53,3 +53,5 @@ https://github.com/user-attachments/assets/fd9be55e-83a1-4ac2-abcc-1da68f37d6f6
 - Tests can be run also inside Android Studio 
   
 <img width="465" alt="Снимок экрана 2025-05-23 в 06 42 22" src="https://github.com/user-attachments/assets/9b556b07-e4f8-4b4a-899a-2514ed941d52" />
+
+- Or download .apk file by this [link](https://drive.google.com/file/d/1no2EO3aCl-eHZ0-Y2VxEVmcyWbaKUCZY/view?usp=sharing)

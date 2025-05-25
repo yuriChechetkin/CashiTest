@@ -5,12 +5,15 @@
 ## 📱 Demo
 
 ### Android
-![Android Demo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenVrYWh1cTY5Yzg4dmJrZmlrbTZlZndlMGsyaW40MzFoaXIxYmh6MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QySbYQ4saxvfTOrDWn/giphy.gif)
+
+https://github.com/user-attachments/assets/e06e7be2-1cef-4714-97c7-962ab014a23a
+
+
 
 
 ### iOS
 
-https://github.com/user-attachments/assets/f52c1e72-79dd-418f-9deb-b40eac2040bf
+https://github.com/user-attachments/assets/fd9be55e-83a1-4ac2-abcc-1da68f37d6f6
 
 
 

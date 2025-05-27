@@ -41,7 +41,7 @@ fun BoxScope.AnimatedLazyList(
 
 private fun TransactionView.key(): String {
     return when (this) {
-        is TransactionView.Header -> this.date
-        is TransactionView.Item -> this.subtitle
+        is TransactionView.Header -> this.toString()
+        is TransactionView.Item -> this.toString()
     }
 }
